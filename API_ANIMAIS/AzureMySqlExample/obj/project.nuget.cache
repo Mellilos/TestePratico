@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "dwc1GXFt4MM+1kuE1ZSvwoARmboOSpb7hL8m1UwOsfOfnbeeCVl3Tj0Cufk2VSpYlCGukSHSn103F0ulCncPEg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nicol\\source\\repos\\API_ANIMAIS\\AzureMySqlExample\\AzureMySqlExample.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nicol\\.nuget\\packages\\mysqlconnector\\1.3.11\\mysqlconnector.1.3.11.nupkg.sha512"
+  ],
+  "logs": []
+}
