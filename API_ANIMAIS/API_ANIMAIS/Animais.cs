@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace API_ANIMAIS
 {
+    //Classe Animais, usada pelo programa para retornar listas de valores retirados do banco de dados
     public class Animais
     {
         public int Id_A { get; set; }

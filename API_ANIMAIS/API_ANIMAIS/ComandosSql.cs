@@ -6,8 +6,11 @@ using Microsoft.Data.SqlClient;
 
 namespace API_ANIMAIS
 {
+    //Classe onde todos os comandos em sql necessários pela api para se comunicar com o banco de dados
+    //do Azure serão definidos e executados
     public class ComandosSql
     {
+        //Função para conectar com o banco de dados
         public SqlConnection Conecta()
         {
             try
@@ -30,6 +33,7 @@ namespace API_ANIMAIS
             
         }
 
+        //Função para selecionar os dados do banco de dados
         public List<Animais> Seleciona()
         {
             List<Animais> animais = new List<Animais>();
@@ -56,6 +60,8 @@ namespace API_ANIMAIS
                 throw;
             }
         }
+
+        //Função para inserir dados no banco de dados
         public string Insere(string nome, string classe, int pes, int voa)
         {
             try
@@ -76,6 +82,7 @@ namespace API_ANIMAIS
             }
 
         }
+        //Função para modificar dados no banco de dados
         public string Altera(int id_a, string nome, string classe, int pes, int voa)
         {
             try
@@ -97,6 +104,7 @@ namespace API_ANIMAIS
                 return e.ToString();
             }
         }
+        //Função para apagar (logicamente) linhas do banco de dados
         public string Apaga(int id_a)
         {
             try
